@@ -77,17 +77,16 @@ namespace VirtualCamera
             return transformed;
         }
 
-        public static void Move(List<List<List<double[,]>>> objects, double[,] vector)
+        public static void Move(List<List<List<double[,]>>> objects, Matrix<double> vector)
         {
-            Matrix<double> vec = Matrix.Build.DenseOfArray(vector);
             foreach(var obj in objects)
             {
                 foreach(var line in obj)
                 {
                     Matrix<double> vec1 = Matrix.Build.DenseOfArray(line[0]);
                     Matrix<double> vec2 = Matrix.Build.DenseOfArray(line[1]);
-                    line[0] = vec1.Add(vec).ToArray();
-                    line[1] = vec2.Add(vec).ToArray();
+                    line[0] = vec1.Add(vector).ToArray();
+                    line[1] = vec2.Add(vector).ToArray();
                 }
             }
         }
@@ -96,37 +95,37 @@ namespace VirtualCamera
 
         public static void W_Used(List<List<List<double[,]>>> objects)
         {
-            double[,] transformation_vector = new double[,] { { 0, -10, 0 } };
+            Matrix<double> transformation_vector = Matrix.Build.DenseOfArray(new double[,] { { 0, -10, 0 } });
             Move(objects, transformation_vector);
         }
 
         public static void A_Used(List<List<List<double[,]>>> objects)
         {
-            double[,] transformation_vector = new double[,] { { 10, 0, 0 } };
+            Matrix<double> transformation_vector = Matrix.Build.DenseOfArray(new double[,] { { 10, 0, 0 } });
             Move(objects, transformation_vector);
         }
 
         public static void S_Used(List<List<List<double[,]>>> objects)
         {
-            double[,] transformation_vector = new double[,] { { 0, 10, 0 } };
+            Matrix<double> transformation_vector = Matrix.Build.DenseOfArray(new double[,] { { 0, 10, 0 } });
             Move(objects, transformation_vector);
         }
 
         public static void D_Used(List<List<List<double[,]>>> objects)
         {
-            double[,] transformation_vector = new double[,] { { -10, 0, 0 } };
+            Matrix<double> transformation_vector = Matrix.Build.DenseOfArray(new double[,] { { -10, 0, 0 } });
             Move(objects, transformation_vector);
         }
 
         public static void E_Used(List<List<List<double[,]>>> objects)
         {
-            double[,] transformation_vector = new double[,] { { 0, 0, -10 } };
+            Matrix<double> transformation_vector = Matrix.Build.DenseOfArray(new double[,] { { 0, 0, -10 } });
             Move(objects, transformation_vector);
         }
 
         public static void Q_Used(List<List<List<double[,]>>> objects)
         {
-            double[,] transformation_vector = new double[,] { { 0, 0, 10 } };
+            Matrix<double> transformation_vector = Matrix.Build.DenseOfArray(new double[,] { { 0, 0, 10 } });
             Move(objects, transformation_vector);
         }
 

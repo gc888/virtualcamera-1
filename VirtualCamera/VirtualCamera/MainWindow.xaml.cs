@@ -96,14 +96,14 @@ namespace VirtualCamera
             pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, 30, 100 } }, new double[,] { { 0, 70, 120 } } });
             pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, 30, 140 } }, new double[,] { { 0, 70, 120 } } });
 
-
             stageobj.Add(cubeLines);
             stageobj.Add(cubeLines2);
             stageobj.Add(pyramidLines);
+
             objects = stageobj;
         }
 
-        private void Button_Click(object sender, KeyEventArgs e)
+        private void KeyStrokeDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.W)
             {
