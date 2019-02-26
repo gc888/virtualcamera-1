@@ -12,5 +12,16 @@
             <RowDefinition Height="320*"/>
         </Grid.RowDefinitions>
         <Canvas Name="MyCanvas" Background="Black" Margin="0,0,28,10" Grid.RowSpan="2"/>
+        <Label Foreground="RosyBrown" FontSize="20">
+            <TextBlock>
+                Controls: <LineBreak/>  
+                WASD - movement up/down/right/left <LineBreak/>
+                E and Q - movement forward and backwards <LineBreak/>
+                Y and U - rotation around X axis <LineBreak/>
+                H and J - rotation around Y axis <LineBreak/>
+                N and M - rotation around Z axis <LineBreak/>
+                I and O - zoom in and zoom out
+            </TextBlock>
+        </Label>
     </Grid>
 </Window>

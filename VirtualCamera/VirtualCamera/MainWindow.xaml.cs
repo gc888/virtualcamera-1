@@ -87,14 +87,14 @@ namespace VirtualCamera
             cubeLines2.Add(new List<double[,]>() { new double[,] { { 10, -20, 100 } }, new double[,] { { 10, -20, 140 } } });
             cubeLines2.Add(new List<double[,]>() { new double[,] { { 10, 20, 100 } }, new double[,] { { 10, 20, 140 } } });
 
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, 30, 100 } }, new double[,] { { 50, 30, 100 } } });
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, 30, 140 } }, new double[,] { { 50, 30, 140 } } });
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, 30, 100 } }, new double[,] { { -50, 30, 140 } } });
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, 30, 100 } }, new double[,] { { 50, 30, 140 } } });
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, 30, 100 } }, new double[,] { { 0, 70, 120 } } });
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, 30, 140 } }, new double[,] { { 0, 70, 120 } } });
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, 30, 100 } }, new double[,] { { 0, 70, 120 } } });
-            pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, 30, 140 } }, new double[,] { { 0, 70, 120 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, -20, 160 } }, new double[,] { { 50, -20, 160 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, -20, 200 } }, new double[,] { { 50, -20, 200 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, -20, 160 } }, new double[,] { { -50, -20, 200 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, -20, 160 } }, new double[,] { { 50, -20, 200 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, -20, 160 } }, new double[,] { { 0, 70, 120 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { -50, -20, 200 } }, new double[,] { { 0, 70, 120 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, -20, 160 } }, new double[,] { { 0, 70, 120 } } });
+            pyramidLines.Add(new List<double[,]>() { new double[,] { { 50, -20, 200 } }, new double[,] { { 0, 70, 120 } } });
 
             stageobj.Add(cubeLines);
             stageobj.Add(cubeLines2);
